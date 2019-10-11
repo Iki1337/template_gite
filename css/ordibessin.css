@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*BOURDEL Raphaël*/
+
+html{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand img{
+	max-height: 40px;
+}
+
+header .row{
+	background-image:url(../img/ordibessin5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 70vh;
+	align-items: center;
+	color: white;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+header .premcol{
+	background-color: rgba(0,0,0,0.5);
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	-webkit-clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);
+}
+
+header h1{
+	font-family: 'Raleway', sans-serif;
+}
+
+header h2{
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 50px;
+}
+
+header .deuxcol{
+	display: flex;
+	min-height: 70vh;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+@media (max-width: 768px){
+	header .deuxcol{
+		display: none;
+	}
+	
+	header .premcol{
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+#presentation .media span{
+	color: goldenrod;
+	font-size: 4rem;
+	width: 5rem;
+	text-align: center;
+	transition: 1s;
+}
+
+#presentation .media:hover span{
+	transform: scale(1.2);
+}
+
+#presentation .media{
+	padding: 20px;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+#presentation .media:hover{
+	background-color:rgba(0,0,0,0.20);
+	border-radius: 15px;
+}
+
+#avis .row{
+	max-width: 100%;
+	margin: auto;
+}
+
+.fondChambre{
+	min-height: calc(100vh - 50px);
+	background-image:url(../img/ordibessin4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.avisClient{
+	min-height: calc(100vh - 50px);
+	background-color: #d3dae4;
+}
+
+.avisClient span{
+	font-size: 7rem;
+	color:#17a2b8;
+}
+
+.avisClient h5{
+	font-size:30px;
+	color:#888;
+}
+
+#contact{
+	background-image:url(../img/ordibessin3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: calc(100vh - 50px);
+}
+
+#contact .row{
+	min-height: calc(100vh - 50px);
+}
+
+.form{
+	background-color: rgba(255,255,255,0.60);
+	padding : 2rem 1rem;
+}
+
+footer{
+	background-color:rgba(0,0,0,0.70);
+	color:#999;
+	padding: 20px 0;
+}
+
+footer a{
+	color:#999;
+	font-size: 50px;
+	transition: all 0.5s ease-in-out;
+}
+
+footer a:hover{
+	color:#fff;
+	text-decoration: none;
+}
